@@ -1,0 +1,64 @@
+include includs/layout
+include includs/vars
+
+
+
+  block testpage
+  div(class="container-fluid p-0")
+
+      ul(class="row text-center m-0 mb-2 " + changecolor)
+        - var meun = ['عمر' ,'2' ,'3']
+                each cate in meun
+                          li(class='col-sm-6 col-md-2 '): a(href="#",title="cat", class="omar")= cate
+                else
+                  li منين ياحاج
+
+      .row
+       .col
+        img(src="assets/images/newsImg.png" class="omar w-25")
+
+      .row
+        div( class="col mt-2 text-center")
+         a(href="#", title="", class="anch m-0 " + changecolor ) omar
+
+block testTitle
+  div( class="container mt-3 pb-5 main-container")
+   div(class="row text-center mainTitle mb-4 p-2 " )
+
+      block testTitle2
+         div(class="col text-right")
+          h3.mt-4 #{remove}
+
+      block testTitleimg
+         div(class="col p-2")
+          img(src="assets/images/policy.svg" class="p-1 d-inline float-left")
+   .row
+    div(class="col text-right " )
+      block testinput
+        form(action="post", class="text-right")
+
+        .form-group
+          label(for="firstName") الاسم
+          input.form-control(
+          type='text'
+          name='name'
+          autocomplete="off"
+            )
+        .form-group
+          label(for="password") كلمة المرور
+          input.form-control(
+          type='password'
+          name='pass'
+        autocomplete="off"
+            )
+        div(class="custom-file rounded-0" )
+          label(class="custom-file-label rounded-0")          &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    معادلة الشهادة
+          input(
+          type='file'
+          name='file'
+          autocomplete="off"
+          class="custom-file-input rounded-0"
+          id="customFile"
+            )
+
+

@@ -1,0 +1,83 @@
+@import 'HidePlaceholder';
+        button:focus {
+        outline: 0 auto -webkit-focus-ring-color
+        }
+        a {
+        @include transition (transition-duration, .5s ease);
+        text-decoration: none !important;
+        cursor: pointer;      color:#fff !important;
+        }
+         a:hover, a:focus{
+               text-decoration: none !important;
+               color:#fff !important;
+        }
+        input:-webkit-autofill {
+          -webkit-text-fill-color: none !important;
+          }
+          input:focus {
+            outline-style: none;
+            box-shadow: none;
+            border-color: transparent;
+            }
+          input {
+            box-shadow: none;
+            border-radius: 0;
+            position: relative;
+            background: 0 0;
+            z-index: 1;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 0;
+            background: #fcfcfc;
+            }
+            input {
+              &::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator {
+                -webkit-appearamce: none !important;
+                display: none;
+              }
+              &[type="time"] {
+                &::-webkit-clear-button, &::-ms-clear {
+                  display: none;
+                }
+              }
+              &[type=text]::-ms-clear {
+                display: none;
+              }
+            }
+
+        ul, ol {
+        list-style: none;
+        padding-right: 0
+        }
+        ::selection {
+          background:$secondColor;
+          color: white;
+          text-shadow: none;
+        }
+        ::-webkit-selection{
+          @extend ::selection;
+        }
+   %backgroundcover {
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+        background-size: cover !important;
+    }
+    .form-control{
+      border-radius: 0 !important;
+    }
+   body {
+        background: #f6f6f6;
+        font-family: "Tajawal-Medium", Arial, sans-serif;
+        overflow-x: hidden !important;
+        direction: $direction;
+
+        }
+
+.removecol{
+  background:#c83b1f !important;
+}

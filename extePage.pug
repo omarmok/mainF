@@ -1,0 +1,32 @@
+extends index
+
+block testTitle
+  div( class="container mt-3 pb-5 main-container "  )
+   div(class="row text-center mainTitle mb-4 p-2 " + change2)
+
+    block testTitle2
+     div(class="col text-right")
+       h3.mt-4 #{newtitle}
+
+    block testTitleimg
+     div(class="col p-2")
+       img(src="assets/images/about.svg" class="p-1 d-inline float-left")
+
+
+
+   block testinput
+      form(action="post", class="text-right")
+        .form-group
+          label() عددد
+          input.form-control(
+          type='checkbox'
+          name='name'
+
+            )
+        .form-group
+          label() يسبييسسي
+          input.form-control(
+          type='checkbox'
+          name='pass'
+        autocomplete="off"
+            )
