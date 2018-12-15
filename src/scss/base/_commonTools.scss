@@ -81,3 +81,35 @@
 .removecol{
   background:#c83b1f !important;
 }
+
+.navebar{
+  background: #fff;
+  box-shadow: 0 6px 14px 0 rgba(52,69,88,0.08) !important;
+}
+
+.colored{
+a{
+  color:#000 !important;
+}
+}
+
+
+
+
+      // check if it has [ title , alt , href ]
+
+
+      // a[alt=""],
+      // a:not([alt]){
+      //   border:1px solid red;
+      // }
+
+      // a[href=""],
+      // a:not([href]){
+      //   border:1px solid rgb(0, 217, 255);
+      // }
+
+      // img[title=""],
+      // img:not([title]){
+      //   border:1px solid green;
+      // }

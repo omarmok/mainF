@@ -49,3 +49,20 @@
 
 
 
+              .mainTitleww{
+                background:#66bb6a;
+                margin: 8px 16px;
+                text-align: $alignright;
+                color: #fff;
+                padding: 10px;
+                font: $secondFont;
+                font-weight: 700;
+                img{
+                width: 50px;
+                margin-bottom: 5px;
+                display: block;
+                &:hover{
+                animation: grow-from-left 800ms ease-in-out 5;
+                }
+                }
+                }

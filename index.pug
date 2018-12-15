@@ -4,22 +4,27 @@ include includs/vars
 
 
   block testpage
-  div(class="container-fluid p-0")
+    div(class="container-fluid p-2 m-0  text-right " + nav)
+        .row
+          div( class="col mt-2")
+            img(src="assets/images/dinLogoC.png" class=" w-25")
 
-      ul(class="row text-center m-0 mb-2 " + changecolor)
-        - var meun = ['عمر' ,'2' ,'3']
-                each cate in meun
-                          li(class='col-sm-6 col-md-2 '): a(href="#",title="cat", class="omar")= cate
-                else
-                  li منين ياحاج
+          ul(class="col  m-0  p-2 " )
+            - var meun = ['الرئيسية' ,'عن العمادة ' ,'المركز الإعلامي' , ' وكالة الشؤون الفنية' , ' وكالة الجامعة']
+                    each cate in meun
+                              li(class=' nav-item  d-inline-block' + maincolor): a(href="#",title="cat", class=" nav-link")=cate
+                    else
+                      li منين ياحاج
 
-      .row
-       .col
-        img(src="assets/images/newsImg.png" class="omar w-25")
+  div(class="container-fluid p-0 mt-2")
+    .row
+    div(class="col p-0 ")
+      include  includs/header
 
       .row
         div( class="col mt-2 text-center")
-         a(href="#", title="", class="anch m-0 " + changecolor ) omar
+                block testhef
+                  a(href="extePage.html", title="", class="anch m-0 " + changecolor ) omar
 
 block testTitle
   div( class="container mt-3 pb-5 main-container")
@@ -62,3 +67,4 @@ block testTitle
             )
 
 
+include includs/footer
